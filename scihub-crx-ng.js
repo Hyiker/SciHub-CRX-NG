@@ -1032,7 +1032,6 @@
         getCCFInfo(e) {
             e = e.replace(/\(.*\)/g, '').replace(/\d{4}/g, '').replace(/'\d{2}/g, '').replace(/\d+(th|nd|st|rd)/g, '')
             e = e.toLowerCase().replace(/&|&amp;/g, "and").replace(/Switzerland|basel|[-.,_—:;()，；（）《》<>\"\/\s]+/gi, "");
-            console.log(e, ccfdata[e]);
             if (ccfdata[e]) return ccfdata[e];
             return null;
         },
