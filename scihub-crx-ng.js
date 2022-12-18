@@ -1230,7 +1230,7 @@
                 document.body.appendChild(floatIco);
                 if (odata.float_open) $('body').append(tdata.pContainer);
                 utils.getPaperInfo(predoi, "DOI");
-                if (base.getV("newVersion")) { alert("SciHub CRX 发现新版本，请及时更新脚本！"); GM_openInTab(base.getV("newVersion"), { active: true }); base.delV("newVersion") }
+                // if (base.getV("newVersion")) { alert("SciHub CRX 发现新版本，请及时更新脚本！"); GM_openInTab(base.getV("newVersion"), { active: true }); base.delV("newVersion") }
             }
         },
         addRankIco() {
